@@ -29,6 +29,8 @@ public class Main {
             String class_number = split[0];
             String name = split[1];
             String course_name = split[2];
+             try {
+
             int exam_score1=Integer.parseInt(split[3]);
             int exam_score2=Integer.parseInt(split[4]);
             int exam_score3=Integer.parseInt(split[5]);
@@ -42,7 +44,10 @@ public class Main {
             System.out.println("Total assignment score: "+(assignment_score1+assignment_score2)/2);
             System.out.println("Final Grade Score: "+(0.7*(exam_score1+exam_score2+exam_score3)/3+0.3*(assignment_score1+assignment_score2)/2));
             System.out.println("===========================");
-            i++;
+
+            i++;}catch(Exception e){
+
+            }
         }
     }
 }
